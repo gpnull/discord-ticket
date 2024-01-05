@@ -1,0 +1,106 @@
+{
+	"clientId": "1192424109024477215", // The id of the discord bot
+	"guildId": "1116092652287438849", // The id of the discord server
+	"mainColor": "#CC99FF", // The hex color of the embeds by default
+	"lang": "vi", // If you want to set english please set "main"
+
+	"openTicketChannelId": "1192412998296424498", // The id of the channel where the message to create a ticket will be sent
+
+	"ticketTypes": [
+		// You have a limit of 25 types (the limit of Discord)
+		{
+			"codeName": "category-one", // The name need to be in lowercase
+			"name": "IC", // The name that will be displayed in the ticket
+			"description": "Hỗ trợ vấn đề của IC", // The description of the Ticket in Create Ticket Menu
+			"emoji": "🎮", // The emoji of the type (can be blank)
+			"color": "#f8312f", // Can be a hex color or blank to use the main color
+			"categoryId": "1192413040642105484", // The category id where the tickets will be created
+			"ticketNameOption": "🎮 IC-USERNAME", // Here is all parameter: USERNAME, USERID, TICKETCOUNT (set to blank to use the default name)
+			"customDescription": "", // The custom description of the ticket type, here is all parameter: USERNAME, USERID, TICKETCOUNT, REASON1, 2, ect (set to blank to use the default description)
+			"cantAccess": [], // The roles who can't access to this ticket type
+			"askQuestions": false, // If the bot should ask the reason of the ticket
+			"questions": [] // Leave blank if you don't want to ask questions
+		},
+		{
+			"codeName": "category-two", // The name need to be in lowercase
+			"name": "OOC", // The name that will be displayed in the ticket
+			"description": "Hỗ trợ vấn đề của OOC", // The description of the Ticket in Create Ticket Menu
+			"emoji": "🗃️", // The emoji of the type (can be blank)
+			"color": "#f8312f", // Can be a hex color or blank to use the main color
+			"categoryId": "1192413040642105484", // The category id where the tickets will be created
+			"ticketNameOption": "🗃️ OOC-USERNAME", // Here is all parameter: USERNAME, USERID, TICKETCOUNT (set to blank to use the default name)
+			"customDescription": "Hãy trình bày cụ thể vấn đề bạn cần được hỗ trợ và vui lòng đợi Hỗ trợ tiếp nhận đơn của bạn.", // The custom description of the ticket type, here is all parameter: USERNAME, USERID, TICKETCOUNT, REASON1, 2, ect (set to blank to use the default description)
+			"cantAccess": [], // The roles who can't access to this ticket type
+			"askQuestions": false, // If the bot should ask the reason of the ticket
+			"questions": [] // Leave blank if you don't want to ask questions
+		}
+		// {
+		// 	"codeName": "other", // The name need to be in lowercase
+		// 	"name": "Other", // The name that will be displayed in the ticket
+		// 	"description": "Description of Category Other", // The description of the Ticket in Create Ticket Menu
+		// 	"emoji": "", // The emoji of the type (can be blank)
+		// 	"color": "", // Can be a hex color or blank to use the main color
+		// 	"categoryId": "1192413040642105484", // The category id where the tickets will be created
+		// 	"ticketNameOption": "USERNAME", // Here is all parameter: USERNAME, USERID, TICKETCOUNT (set to blank to use the default name)
+		// 	"customDescription": "Thank you for your ticket, a staff will reply you as soon as possible\n\n__**What is the reason of the ticket?**__: REASON1", // The custom description of the ticket type, here is all parameter: USERNAME, USERID, TICKETCOUNT, REASON1, 2, ect (set to blank to use the default description)
+		// 	"cantAccess": [], // The roles who can't access to this ticket type
+		// 	"askQuestions": true, // If the bot should ask the reason of the ticket
+		// 	"questions": [
+		// 		// Maximum of 5 questions can be set due to discord's limit
+		// 		{
+		// 			"label": "Lý do bạn cần gửi hỗ trợ?",
+		// 			"placeholder": "Vui lòng ghi ngắn gọn, các vấn đề chi tiết cụ thể vui lòng ghi sau khi ticket được tạo.",
+		// 			"style": "PARAGRAPH", // SHORT or PARAGRAPH
+		// 			"maxLength": 1000
+		// 		}
+		// 	]
+		// }
+	],
+	
+	"ticketNameOption": "Ticket-USERNAME", // Here is all parameter: USERNAME, USERID, TICKETCOUNT
+
+	// Ticket Claim Options
+	"claimOption": {
+		"claimButton": true, // Whether to enable ticket claim button or not
+		// The X can be replaced with S (The staff that claimed the ticket) or U (The user that created the ticket)
+		"nameWhenClaimed": "✔️ Ticket-X_USERNAME", // Here is all parameter: X_USERNAME, X_USERID, TICKETCOUNT
+		"categoryWhenClaimed": "" // The category the ticket is moved to when claimed
+	},
+
+	"rolesWhoHaveAccessToTheTickets": ["1192413854647451708"], // Roles who can access to the tickets (Like the staff)
+
+	"rolesWhoCanNotCreateTickets": [], // Roles who can	not create a tickets (Like a blacklist)
+
+	"pingRoleWhenOpened": true,
+	"roleToPingWhenOpenedId": ["1192413854647451708"], // The role to ping when a ticket is opened
+
+	"logs": true,
+	"logsChannelId": "1192413170254483476", // The id of the channel where the logs will be sent
+	
+	"closeOption": {
+		"closeButton": true, // If false the ticket can be closed only by doing /closes
+		"dmUser": true, // Whether to DM the user when the ticket is closed
+		"createTranscript": true, // If set to true, when the ticket is closed a transcript will be generated and sent in the logs channel
+		"askReason": true, // If false the ticket will be closed without asking the reason
+		"whoCanCloseTicket": "STAFFONLY", // STAFFONLY (roles configured at "rolesWhoHaveAccessToTheTickets") or EVERYONE
+		"closeTicketCategoryId": "" // The id of the category where a closed ticket will be moved to. Leave blank to disable this feature
+	},
+	"uuidType": "uuid", // uuid or emoji
+
+	"status": {
+		"enabled": true, // If you want to enable the status of the bot
+		"text": "DreamLand Roleplay", // The text of the status
+		"type": "COMPETING", // PLAYING, WATCHING, LISTENING, STREAMING, COMPETING
+		"url": "", // The url of the status if the type is STREAMING (can be blank)
+		"status": "online" // online, idle, dnd, invisible set to online if the type is STREAMING
+	},
+
+	"maxTicketOpened": 0, // The number of tickets the user can open while another one is already open. Set to 0 to unlimited
+	/*
+	Whether or not to minimizing the tracking data that are being sent
+	Enabling this will cause the telemetry to only send the software version and node version
+	*/
+	"minimalTracking": false,
+	// Hide internal websocket logs
+	"showWSLog": false
+}

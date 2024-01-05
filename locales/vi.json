@@ -1,0 +1,75 @@
+{
+	"embeds": {
+		"openTicket": {
+			"title": "MỞ PHIẾU HỖ TRỢ",
+			"description": "Nhấn vào nút bên dưới để bắt đầu mở một phiếu hỗ trợ.\nChúng mình sẽ cố gắng tiếp nhận và giải quyết vấn đề của bạn nhanh nhất có thể.",
+			"footer": {
+				"text": "DreamLandRP",
+				"iconURL": "https://cdn.discordapp.com/attachments/1190206336647036938/1190206517148921896/logo_dream.jpg?ex=65aa2fb2&is=6597bab2&hm=0aab7f60db200f1796fe38ff58b0956b8dc9d8943162cab53e9a75726512b3c9&"
+			}
+		},
+		"ticketOpened": {
+			"title": "Phiếu hỗ trợ CATEGORYNAME",
+			"description": "Hãy trình bày cụ thể vấn đề bạn cần được hỗ trợ và vui lòng đợi Hỗ trợ tiếp nhận đơn của bạn.",
+			"footer": {
+				"text": "DreamLandRP",
+				"iconUrl": "https://cdn.discordapp.com/attachments/1190206336647036938/1190206517148921896/logo_dream.jpg?ex=65aa2fb2&is=6597bab2&hm=0aab7f60db200f1796fe38ff58b0956b8dc9d8943162cab53e9a75726512b3c9&"
+			}
+		},
+		"ticketClosed": {
+			"title": "Phiếu hỗ trợ đã đóng",
+			"description": "Phiếu hỗ trợ đã được CLOSERNAME đóng với lý do: `REASON`"
+		},
+		"ticketClosedDM": {
+			"title": "Phiếu hỗ trợ đã đóng",
+			"description": "Phiếu hỗ trợ số n°TICKETCOUNT đã được CLOSERNAME đóng với lý do: `REASON`\n\nDưới đây là bản ghi chép của phiếu hỗ trợ: TRANSCRIPTURL",
+			"footer": {
+				"text": "DreamLandRP"
+			}
+		}
+	},
+	"modals": {
+		"reasonTicketOpen": {
+			"title": "Mở phiếu hỗ trợ",
+			"label": "Lý do của phiếu hỗ trợ của bạn",
+			"placeholder": "Vui lòng nhập lý do bạn mở một phiếu hỗ trợ"
+		},
+		"reasonTicketClose": {
+			"title": "Đóng phiếu hỗ trợ",
+			"label": "Lý do đóng phiếu hỗ trợ",
+			"placeholder": "Vui lòng nhập lý do bạn đóng phiếu hỗ trợ"
+		}
+	},
+	"buttons": {
+		"close": {
+			"label": "Đóng phiếu hỗ trợ",
+			"emoji": "🔒"
+		},
+		"claim": {
+			"label": "Tiếp nhận",
+			"emoji": "🙋"
+		}
+	},
+	"invalidConfig": "Phát hiện cấu hình không hợp lệ, vui lòng yêu cầu người quản trị bot sửa chữa!",
+	"ticketOpenedMessage": "Phiếu hỗ trợ đã mở! TICKETCHANNEL",
+	"ticketOnlyClaimableByStaff": "Chỉ người có thẩm quyền mới có thể tiếp nhận phiếu hỗ trợ này!",
+	"ticketAlreadyClaimed": "Phiếu hỗ trợ này đã được tiếp nhận!",
+	"ticketClaimedMessage": "> Phiếu hỗ trợ đã được tiếp nhận bởi USER",
+	"ticketOnlyClosableByStaff": "Chỉ người có thẩm quyền mới có thể đóng phiếu hỗ trợ!",
+	"ticketAlreadyClosed": "Phiếu hỗ trợ này đã được đóng!",
+	"ticketCreatingTranscript": "> Đang tạo bản ghi chép...",
+	"ticketTranscriptCreated": "> Bản ghi chép đã được tạo! TRANSCRIPTURL",
+	"ticketOnlyRenamableByStaff": "Chỉ người có thẩm quyền mới có thể đổi tên phiếu hỗ trợ!",
+	"ticketRenamed": "> Phiếu hỗ trợ đã được đổi tên thành NEWNAME",
+	"ticketLimitReached": "Bạn chỉ có thể mở tối đa TICKETLIMIT phiếu hỗ trợ cùng một lúc!",
+	"noTickets": "Bạn không có quyền truy cập vào bất kỳ phiếu hỗ trợ nào",
+
+	"other": {
+		"openTicketButtonMSG": "Mở phiếu hỗ trợ",
+		"deleteTicketButtonMSG": "Xóa phiếu hỗ trợ",
+		"selectTicketTypePlaceholder": "Chọn loại phiếu hỗ trợ",
+		"claimedBy": "**Được tiếp nhận bởi**: USER",
+		"noReasonGiven": "Không có lý do nào được cung cấp",
+		"unavailable": "Không khả dụng"
+	}
+}

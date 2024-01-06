@@ -141,7 +141,8 @@ export const createTicket = async (interaction: StringSelectMenuInteraction | Mo
 				text: `${footer.trim() !== "" ? `${footer}` : ""}`, // Please respect the LICENSE :D
 				// Please respect the project by keeping the credits, (if it is too disturbing you can credit me in the "about me" of the bot discord)
 				iconURL: locale.getNoErrorSubValue("embeds", "ticketOpened", "footer", "iconUrl")
-			});
+			})
+			.setTimestamp()
 
 		const row = new ActionRowBuilder<ButtonBuilder>();
 
